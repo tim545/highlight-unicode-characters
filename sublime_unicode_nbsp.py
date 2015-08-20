@@ -86,7 +86,7 @@ class HighlightUnicodeListener(DeferedViewListener):
         u'\x84' : ',,',       # High code double comma
         u'\x85' : '...',      # Tripple dot
         u'\x88' : '^',        # High carat
-        u'\x91' : ' \x27',     # Forward single quote
+        u'\x91' : ' \x27',    # Forward single quote
         u'\x92' : '\x27',     # Reverse single quote
         u'\x93' : '\x22',     # Forward double quote
         u'\x94' : '\x22',     # Reverse double quote
@@ -103,7 +103,8 @@ class HighlightUnicodeListener(DeferedViewListener):
         u'\xbe' : '3/4',      # three quarters
         u'\xbf' : '\x27',     # c-single quote
         u'\xa8' : '',         # modifier - under curve
-        u'\xb1' : ''          # modifier - under line
+        u'\xb1' : '',         # modifier - under line
+        u'\u200b' : ''        # Zero width space
     }
 
     def __init__(self):
