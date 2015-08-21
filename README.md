@@ -4,11 +4,11 @@ This plug-in highlights characters such as non breakable space, characters that 
 
 ## Installation
 
-To install this plug-in use package manager.
+Clone the repository and copy the whole project directory into the `Packages` folder, you can open your sublime packages with a menu option `SSublime Text -> Preferences -> Browse Packages...`
 
 ## Customization
 
-You might want to override the following parameters within your file settings:
+You can override the following parameters within your file settings:
 
 `highlight_unicode_max_file_size`: Restrict this to a sane size in order not to DDOS your editor. Defaults to 1048576 (1 Mio).
 

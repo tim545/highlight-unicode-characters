@@ -3,10 +3,10 @@ Highlights unicode nbsp. and trailing stuff
 based on:
 https://bitbucket.org/theblacklion/sublime_plugins/src/3ea0c9e35d2f/highlight_trailing_spaces.py
 http://stackoverflow.com/a/6609998/96664
+https://github.com/possan/sublime_unicode_nbsp
 '''
 
-import sublime
-import sublime_plugin
+import sublime, sublime_plugin
 
 DEFAULT_MAX_FILE_SIZE = 1048576
 DEFAULT_COLOR_NAME = 'invalid'
