@@ -4,7 +4,7 @@ This plug-in highlights characters such as non breakable space, characters that 
 
 ## Installation
 
-Clone the repository and copy the whole project directory into the `Packages` folder, you can open your sublime packages with a menu option `SSublime Text -> Preferences -> Browse Packages...`
+Clone the repository and copy the whole project directory into the `Packages` folder, you can open your sublime packages with a menu option `Sublime Text -> Preferences -> Browse Packages...`
 
 ## Customization
 

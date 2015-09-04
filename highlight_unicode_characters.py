@@ -104,7 +104,10 @@ class HighlightUnicodeListener(DeferedViewListener):
         u'\xbf' : '\x27',     # c-single quote
         u'\xa8' : '',         # modifier - under curve
         u'\xb1' : '',         # modifier - under line
-        u'\u200b' : ''        # Zero width space
+        u'\u200b' : '',       # Zero width space
+        u'\u200c' : '',       # zero width non-joiner Unicode code point
+        u'\u200d' : '',       # zero width joiner Unicode code point
+        u'\ufeff' : ''        # zero width no-break space Unicode code point
     }
 
     def __init__(self):
@@ -125,8 +128,6 @@ class HighlightUnicodeListener(DeferedViewListener):
         for x in view.find_all(u'[ \t]+$'):
             regions.append(x)
 
-        #for x in view.find_all(u'^$'):
-        #    regions.append(x)
         icon = ''
         flags = sublime.DRAW_EMPTY_AS_OVERWRITE
         view.add_regions('HighlightUnicodeJunk', regions, color_name, icon, flags)
